@@ -12,6 +12,6 @@ This project can be used for learning these algorithms, by understanding how alg
 3. Adjust the parameters to see the performance of model
 
 ## Note
-+ While adjusting eps in DBSCAN if the uniques cluster printed have -1 in it ,that means some points have considered as noise and noise points also get plotted in scatterplot and may feel like inaccurate,try setting the eps such that there is no -1 in no.of unique clusters.
++ While adjusting eps in DBSCAN if the uniques cluster printed have -1 in it ,that means some points have considered as noise and noise points also get plotted in scatterplot and may feel like inaccurate,try setting the eps such that there is no -1 in no.of unique clusters. In some cases these noise points cannot be eliminated, all noise points will have same color.
 
 Also if you would like to contribute to the project by adding extra algorihtms please feel free to do it.........
