@@ -4,7 +4,7 @@ from sklearn.cluster import DBSCAN,KMeans
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.title("DBSCAN Visualization")
+st.title("DBSCAN $ KMeans Visualization")
 
 
 #___________________________________________Hyperparameters__________________________
