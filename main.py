@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.cluster import DBSCAN,KMeans
 import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.preprocessing import MinMaxScaler
 
 st.title("DBSCAN $ KMeans Visualization")
 
@@ -17,7 +18,7 @@ with sidebar:
     algorithm=st.selectbox("Select Algorithm",options=a_opt,index=1)
     
     st.header("DBCAN Parameters")
-    epsilon=st.slider("Select eps radius",value=0.5,min_value=0.1,max_value=5.0,step=0.01)
+    epsilon=st.slider("Select eps radius",value=0.5,min_value=0.1,max_value=1.0,step=0.0001)
     min_points=st.slider("No.of Minimum Sample",value=5,min_value=0,max_value=10,step=1)
     
     st.header("KMeans Parameters")
@@ -74,6 +75,8 @@ with expander_data:
     
 if st.button("Run"):
     data=df.iloc[:,:-1].values
+    mn=MinMaxScaler()
+    data=mn.fit_transform(data)*5
     
     #_________________________________Clustered Datapoints Plot__________________________________
     
