@@ -12,6 +12,6 @@ This project can be used for learning these algorithms, by understanding how alg
 3. Adjust the parameters to see the performance of model
 
 ## Note
-+ While adjusting eps in DBSCAN if the uniques cluster printed have -1 in it ,that means some points have considered as noise and plot may be inaccurate,try setting the eps such that there is no -1 no.of unique clusters
++ While adjusting eps in DBSCAN if the uniques cluster printed have -1 in it ,that means some points have considered as noise and plot may be inaccurate,try setting the eps such that there is no -1 in no.of unique clusters
 
 Also if you would like to contribute to the project by adding extra algorihtms please feel free to do it.........
